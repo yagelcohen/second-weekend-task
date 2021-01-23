@@ -16,9 +16,9 @@ const array = []
 
     }
     array[1] = {
-        startedAt: new Date("2021-01-20:13:00"),
+        startedAt: new Date("2021-01-07:11:00"),
 
-        finishedAt: new Date("2021-01-20:19:00"),
+        finishedAt: new Date("2021-01-07:20:00"),
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
@@ -26,9 +26,9 @@ const array = []
             return out;
         },
         
-        tasksGiven: 10,
+        tasksGiven: 28,
         
-        tasksFinished: 7,
+        tasksFinished: 25,
         
         tasksFinishedPrecent: function(){
             let answer = 0;
@@ -41,9 +41,9 @@ const array = []
 
     }
     array[2] = {
-        startedAt: new Date("2021-01-20:13:00"),
+        startedAt: new Date("2021-01-08:14:00"),
 
-        finishedAt: new Date("2021-01-20:19:00"),
+        finishedAt: new Date("2021-01-08:20:00"),
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
@@ -51,9 +51,9 @@ const array = []
             return out;
         },
         
-        tasksGiven: 10,
+        tasksGiven: 22,
         
-        tasksFinished: 7,
+        tasksFinished: 15,
         
         tasksFinishedPrecent: function(){
             let answer = 0;
@@ -66,9 +66,9 @@ const array = []
 
     }
     array[3] = {
-        startedAt: new Date("2021-01-20:13:00"),
+        startedAt: new Date("2021-01-11:13:00"),
 
-        finishedAt: new Date("2021-01-20:19:00"),
+        finishedAt: new Date("2021-01-11:21:00"),
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
@@ -76,9 +76,9 @@ const array = []
             return out;
         },
         
-        tasksGiven: 10,
+        tasksGiven: 38,
         
-        tasksFinished: 7,
+        tasksFinished: 21,
         
         tasksFinishedPrecent: function(){
             let answer = 0;
@@ -90,18 +90,18 @@ const array = []
 
     }
     array[4] = {
-        startedAt: new Date("2021-01-20:13:00"),
+        startedAt: new Date("2021-01-12:13:00"),
 
-        finishedAt: new Date("2021-01-20:19:00"),
+        finishedAt: new Date("2021-01-12:19:00"),
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
             out+= " hours";
             return out;
         },
-        tasksGiven: 10,
+        tasksGiven: 13,
         
-        tasksFinished: 7,
+        tasksFinished: 13,
         
         tasksFinishedPrecent: function(){
             let answer = 0;
@@ -114,9 +114,9 @@ const array = []
 
     }
     array[5] = {
-        startedAt: new Date("2021-01-20:13:00"),
+        startedAt: new Date("2021-01-13:13:00"),
 
-        finishedAt: new Date("2021-01-20:19:00"),
+        finishedAt: new Date("2021-01-13:18:00"),
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
@@ -124,9 +124,9 @@ const array = []
             return out;
         },
         
-        tasksGiven: 10,
+        tasksGiven: 16,
         
-        tasksFinished: 7,
+        tasksFinished: 14,
         
         tasksFinishedPrecent: function(){
             let answer = 0;
@@ -139,9 +139,9 @@ const array = []
 
     }
     array[6] = {
-        startedAt: new Date("2021-01-20:13:00"),
+        startedAt: new Date("2021-01-14:13:00"),
 
-        finishedAt: new Date("2021-01-20:19:00"),
+        finishedAt: new Date("2021-01-14:23:00"),
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
@@ -149,9 +149,9 @@ const array = []
             return out;
         },
         
-        tasksGiven: 10,
+        tasksGiven: 19,
         
-        tasksFinished: 7,
+        tasksFinished: 17,
         
         tasksFinishedPrecent: function(){
             let answer = 0;
@@ -164,9 +164,9 @@ const array = []
 
     }
     array[7] = {
-        startedAt: new Date("2021-01-20:13:00"),
+        startedAt: new Date("2021-01-17:10:00"),
 
-        finishedAt: new Date("2021-01-20:19:00"),
+        finishedAt: new Date("2021-01-17:19:00"),
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
@@ -174,9 +174,9 @@ const array = []
             return out;
         },
         
-        tasksGiven: 10,
+        tasksGiven: 21,
         
-        tasksFinished: 7,
+        tasksFinished: 17,
         
         tasksFinishedPrecent: function(){
             let answer = 0;
@@ -189,9 +189,9 @@ const array = []
 
     }
     array[8] = {
-        startedAt: new Date("2021-01-20:13:00"),
+        startedAt: new Date("2021-01-18:13:00"),
 
-        finishedAt: new Date("2021-01-20:19:00"),
+        finishedAt: new Date("2021-01-18:19:00"),
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
@@ -199,9 +199,9 @@ const array = []
             return out;
         },
         
-        tasksGiven: 10,
+        tasksGiven: 32,
         
-        tasksFinished: 7,
+        tasksFinished: 25,
         
         tasksFinishedPrecent: function(){
             let answer = 0;
@@ -214,19 +214,19 @@ const array = []
 
     }
     array[9] = {
-        startedAt: new Date("2021-01-20:13:00"),
+        startedAt: new Date("2021-01-19:13:00"),
 
-        finishedAt: new Date("2021-01-20:19:00"),
+        finishedAt: new Date("2021-01-19:22:00"),
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
-            out+= " hours";
+            // out+= " hours";
             return out;
         },
         
-        tasksGiven: 10,
+        tasksGiven: 16,
         
-        tasksFinished: 7,
+        tasksFinished: 9,
         
         tasksFinishedPrecent: function(){
             let answer = 0;
@@ -245,7 +245,7 @@ const array = []
         
         totalTime:function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
-            out+= " hours";
+            // out+= " hours";
             return out;
         },
         
@@ -263,21 +263,50 @@ const array = []
         topic: "Objects"
 
     }
+    let className = " "
+    let newArray = array.slice(1) ;
         document.write('<table>');
         document.write(`<tr> <th>${array[0].startedAt}</th><th>${array[0].finishedAt}</th>
         <th>${array[0].totalTime}</th><th>${array[0].tasksGiven}</th>
         <th>${array[0].tasksFinished}</th><th>${array[0].tasksFinishedPrecent}</th>
         <th>${array[0].topic}</th></tr>`)
-        for (const criterion of array.slice(1)) {
-        document.write(`<tr> <td>${criterion.startedAt}</td><td>${criterion.finishedAt}</td>
-        <td>${criterion.totalTime()}</td><td>${criterion.tasksGiven}</td>
+     
+        for (const criterion of newArray) {
+        document.write(`<tr>  <td>${criterion.startedAt}</td><td>${criterion.finishedAt}</td>
+        <td class=${timeColor(criterion.totalTime())}>${criterion.totalTime()} hours</td><td>${criterion.tasksGiven}</td>
         <td>${criterion.tasksFinished}</td><td>${criterion.tasksFinishedPrecent()}</td>
         <td>${criterion.topic}</td></tr>`)
         }
         document.write('</table>');
 
-       
-        
+     
+    //     document.write(`<tr>`);
+    //  document.write( `<td class ='time'> array[1].tasksFinishedPrecent();</td>`)
+    //   document.write(`</tr>`);
+
+        // class="${className}"
+    //     document.write(`<tr>`);
+    //     for (const x in newArray) {
+    //           if(newArray[x] === 'totalTime'){
+    //              if(x>=8){
+    //              className = 'toMuchTime';
+    //             //   document.write(`<td class = "${className}">${newArray[x]}</td>`)
+    //          }else if (5>=x<8) {
+    //             className = 'goodTime';
+    //          } else if(x < 5) {
+    //              className= 'time'
+    //          }
+    //      }  
+    //  }  
+    //      document.write(`</tr>`);
+
+
+
+
+
+
+
+
         array[1].tasksFinishedPrecent();
         array[2].tasksFinishedPrecent();
         array[3].tasksFinishedPrecent();
@@ -299,3 +328,17 @@ const array = []
         array[9].totalTime()
         array[10].totalTime()
 
+
+      function timeColor(time){
+          if(time<5){
+              return "green";
+          }else if (time<8) {
+              return "yellow";
+          }else{
+              return "red";
+        }
+      }
+      
+
+      
+       
