@@ -5,29 +5,38 @@ table{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     color: blanchedalmond;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
 
 }
 th{
     border: solid;
     font-size: 20px;
-    background-color: black;
+    background-color: rgb(82, 75, 75);
     color: blanchedalmond;
+    border-radius: 10%;
+
 
 }
 td{
     border: solid;
+    border-radius: 10%;
+
 }
 tr{
     border: solid;
+    border-radius: 10%;
+
 }
 .red{
-    background-color: red;
+    background-color: rgb(241, 44, 44);
 }
 .yellow{
-    background-color: yellow;
+    background-color: rgb(233, 233, 44);
 }
 .green{
-    background-color: green;
+    background-color: rgb(64, 231, 64);
 }
 .bad{
     background-color: rgb(103, 193, 223);
@@ -36,5 +45,5 @@ tr{
     background-color: rgb(92, 92, 228);
 }
 .best{
-    background-color: rgb(52, 52, 189);
+    background-color: rgb(30, 30, 190);
 }

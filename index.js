@@ -253,42 +253,19 @@ const array = []
         topic: "Objects"
 
     }
-    let className = " "
     let newArray = array.slice(1) ;
         document.write('<table>');
         document.write(`<tr> <th>${array[0].startedAt}</th><th>${array[0].finishedAt}</th>
         <th>${array[0].totalTime}</th><th>${array[0].tasksGiven}</th>
         <th>${array[0].tasksFinished}</th><th>${array[0].tasksFinishedPrecent}</th>
         <th>${array[0].topic}</th></tr>`)
-     
         for (const criterion of newArray) {
-        document.write(`<tr>  <td>${criterion.startedAt}</td><td>${criterion.finishedAt}</td>
+        document.write(`<tr>  <td>${criterion.startedAt.toLocaleTimeString("it-lT",{hour:'2-digit',minute:'2-digit'})}</td><td>${criterion.finishedAt.toLocaleTimeString("it-lT",{hour:'2-digit',minute:'2-digit'})}</td>
         <td class=${timeColor(criterion.totalTime())}>${criterion.totalTime()} hours</td><td>${criterion.tasksGiven}</td>
-        <td>${criterion.tasksFinished}</td><td class=${present(criterion.tasksFinishedPrecent())}%>${criterion.tasksFinishedPrecent()}</td>
+        <td>${criterion.tasksFinished}</td><td class=${present(criterion.tasksFinishedPrecent())}>${criterion.tasksFinishedPrecent()}%</td>
         <td>${criterion.topic}</td></tr>`)
         }
         document.write('</table>');
-
-     
-    //     document.write(`<tr>`);
-    //  document.write( `<td class ='time'> array[1].tasksFinishedPrecent();</td>`)
-    //   document.write(`</tr>`);
-
-        // class="${className}"
-    //     document.write(`<tr>`);
-    //     for (const x in newArray) {
-    //           if(newArray[x] === 'totalTime'){
-    //              if(x>=8){
-    //              className = 'toMuchTime';
-    //             //   document.write(`<td class = "${className}">${newArray[x]}</td>`)
-    //          }else if (5>=x<8) {
-    //             className = 'goodTime';
-    //          } else if(x < 5) {
-    //              className= 'time'
-    //          }
-    //      }  
-    //  }  
-    //      document.write(`</tr>`);
 
 
 
@@ -329,9 +306,9 @@ const array = []
         }
       }
       function present(x){
-          if(x<50){
+          if(x<60){
               return "bad";
-          }else if(x<80){
+          }else if(x<85){
               return "ok";
           }else{
               return "best";
@@ -339,5 +316,4 @@ const array = []
       }
       
 
-      
-       
+    
