@@ -22,7 +22,6 @@ const array = []
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
-            out+= " hours";
             return out;
         },
         
@@ -33,7 +32,7 @@ const array = []
         tasksFinishedPrecent: function(){
             let answer = 0;
             answer = (100*(this.tasksFinished/this.tasksGiven));
-            answer = Math.floor(answer) + "%";
+            answer = Math.floor(answer);
             return answer
         },
         
@@ -47,7 +46,6 @@ const array = []
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
-            out+= " hours";
             return out;
         },
         
@@ -58,7 +56,7 @@ const array = []
         tasksFinishedPrecent: function(){
             let answer = 0;
             answer = (100*(this.tasksFinished/this.tasksGiven));
-            answer = Math.floor(answer) + "%";
+            answer = Math.floor(answer);
             return answer
         },
         
@@ -72,7 +70,6 @@ const array = []
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
-            out+= " hours";
             return out;
         },
         
@@ -83,7 +80,7 @@ const array = []
         tasksFinishedPrecent: function(){
             let answer = 0;
             answer = (100*(this.tasksFinished/this.tasksGiven));
-            answer = Math.floor(answer) + "%";
+            answer = Math.floor(answer);
             return answer
         },
         topic: "JavaScript"
@@ -96,7 +93,6 @@ const array = []
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
-            out+= " hours";
             return out;
         },
         tasksGiven: 13,
@@ -106,7 +102,7 @@ const array = []
         tasksFinishedPrecent: function(){
             let answer = 0;
             answer = (100*(this.tasksFinished/this.tasksGiven));
-            answer = Math.floor(answer) + "%";
+            answer = Math.floor(answer);
             return answer
         },
         
@@ -120,7 +116,6 @@ const array = []
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
-            out+= " hours";
             return out;
         },
         
@@ -131,7 +126,7 @@ const array = []
         tasksFinishedPrecent: function(){
             let answer = 0;
             answer = (100*(this.tasksFinished/this.tasksGiven));
-            answer = Math.floor(answer) + "%";
+            answer = Math.floor(answer);
             return answer
         },
         
@@ -145,7 +140,6 @@ const array = []
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
-            out+= " hours";
             return out;
         },
         
@@ -156,7 +150,7 @@ const array = []
         tasksFinishedPrecent: function(){
             let answer = 0;
             answer = (100*(this.tasksFinished/this.tasksGiven));
-            answer = Math.floor(answer) + "%";
+            answer = Math.floor(answer);
             return answer
         },
         
@@ -170,7 +164,6 @@ const array = []
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
-            out+= " hours";
             return out;
         },
         
@@ -181,7 +174,7 @@ const array = []
         tasksFinishedPrecent: function(){
             let answer = 0;
             answer = (100*(this.tasksFinished/this.tasksGiven));
-            answer = Math.floor(answer) + "%";
+            answer = Math.floor(answer);
             return answer
         },
         
@@ -195,7 +188,6 @@ const array = []
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
-            out+= " hours";
             return out;
         },
         
@@ -206,7 +198,7 @@ const array = []
         tasksFinishedPrecent: function(){
             let answer = 0;
             answer = (100*(this.tasksFinished/this.tasksGiven));
-            answer = Math.floor(answer) + "%";
+            answer = Math.floor(answer);
             return answer
         },
         
@@ -220,7 +212,6 @@ const array = []
         
         totalTime:  function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
-            // out+= " hours";
             return out;
         },
         
@@ -231,7 +222,7 @@ const array = []
         tasksFinishedPrecent: function(){
             let answer = 0;
             answer = (100*(this.tasksFinished/this.tasksGiven));
-            answer = Math.floor(answer) + "%"; 
+            answer = Math.floor(answer); 
             return answer
         },
         
@@ -245,7 +236,6 @@ const array = []
         
         totalTime:function(){
             out=Math.abs(this.finishedAt.getHours()-this.startedAt.getHours());
-            // out+= " hours";
             return out;
         },
         
@@ -256,7 +246,7 @@ const array = []
         tasksFinishedPrecent: function(){
             let answer = 0;
             answer = (100*(this.tasksFinished/this.tasksGiven));
-            answer = Math.floor(answer) + "%";
+            answer = Math.floor(answer);
             return answer
         },
         
@@ -274,7 +264,7 @@ const array = []
         for (const criterion of newArray) {
         document.write(`<tr>  <td>${criterion.startedAt}</td><td>${criterion.finishedAt}</td>
         <td class=${timeColor(criterion.totalTime())}>${criterion.totalTime()} hours</td><td>${criterion.tasksGiven}</td>
-        <td>${criterion.tasksFinished}</td><td>${criterion.tasksFinishedPrecent()}</td>
+        <td>${criterion.tasksFinished}</td><td class=${present(criterion.tasksFinishedPrecent())}%>${criterion.tasksFinishedPrecent()}</td>
         <td>${criterion.topic}</td></tr>`)
         }
         document.write('</table>');
@@ -337,6 +327,15 @@ const array = []
           }else{
               return "red";
         }
+      }
+      function present(x){
+          if(x<50){
+              return "bad";
+          }else if(x<80){
+              return "ok";
+          }else{
+              return "best";
+          }
       }
       
 

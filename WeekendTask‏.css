@@ -29,3 +29,12 @@ tr{
 .green{
     background-color: green;
 }
+.bad{
+    background-color: rgb(103, 193, 223);
+}
+.ok{
+    background-color: rgb(92, 92, 228);
+}
+.best{
+    background-color: rgb(52, 52, 189);
+}
