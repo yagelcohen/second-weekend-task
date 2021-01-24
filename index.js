@@ -263,24 +263,23 @@ let list = ['startedAt','finishedAt','totalTime','tasksGiven','tasksFinished','t
 
         function tableList(x,list,t,t1){
             const tr = document.createElement('tr');
-            for(let i=0; i<list.length; i++){                
-if(list[i] === 'totalTime')
+            for(let i=0; i<list.length; i++){         
+                var td1 = document.createElement('td');      
+if(list[i] === 'totalTime' && Number(t.slice(0,2)))
 {
-console.log(t);
 var text1 = document.createTextNode(t);
-td1.classList.add(timeColor(t.slice(0,1)))
+td1.classList.add(timeColor(t.slice(0,2)))
 }
-else if(list[i] === 'tasksFinishedPrecent')
+else if(list[i] === 'tasksFinishedPrecent'  && Number(t1.slice(0,2)))
 {
 var text1 = document.createTextNode(t1);
+td1.classList.add(present(t1.slice(0,2)));
+
 }
 else{
-console.log(x[list[i]]);
 var text1 = document.createTextNode(x[list[i]]);
-console.log(text1);
 }
                
-                var td1 = document.createElement('td');
 tr.appendChild(td1);
 
 table.appendChild(tr);
@@ -295,8 +294,7 @@ td1.appendChild(text1);
 
             tableList(array[i],list,array[i].totalTime() +" hours",array[i].tasksFinishedPrecent()+ "%");
         }
-
-
+ 
 
     // const tr = document.createElement("tr");
     // const td = document.createElement("td");
@@ -391,6 +389,7 @@ td1.appendChild(text1);
         }
       }
       function present(x){
+          console.log(x);
           if(x<60){
               return "bad";
           }else if(x<85){
